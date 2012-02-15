@@ -1,0 +1,7 @@
+This is a mirror of http://www.vim.org/scripts/script.php?script_id=3938
+
+Trailer Trash highlights trailing white space to be teh same highlight as "ErrorMsg," making if very obvious.
+
+It is smart enough no to highlight while you are typing, only when you exit insert will the whitespace be highlighted.
+
+The source is on github here: https://github.com/csexton/trailertrash.vim
