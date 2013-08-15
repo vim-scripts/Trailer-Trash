@@ -1,7 +1,19 @@
 This is a mirror of http://www.vim.org/scripts/script.php?script_id=3938
 
-Trailer Trash highlights trailing white space to be teh same highlight as "ErrorMsg," making if very obvious.
+Highlight and eradicate whitespace at the end of the line in Vim.
 
-It is smart enough no to highlight while you are typing, only when you exit insert will the whitespace be highlighted.
+This plugin will highlight trailing whitespace at the end of the line. This is done in a polite way:
+
+ * You are not currently editing that line (prevents highlighting it as you type)
+ * You are not in insert mode
+
+It also introduces a :Trim command that will strip all the trailing white space from a file (or range). This is done in a polite way:
+
+ * Places the cursor back where is started
+ * Resets the search highlight back to what it was
+
+TrailerTrash defines `a :Trailer` command to stop showing unwanted whitespace, for those projects where you don't want to start fighting it.
+
+As always, Trailer Trash is polite.
 
 The source is on github here: https://github.com/csexton/trailertrash.vim
